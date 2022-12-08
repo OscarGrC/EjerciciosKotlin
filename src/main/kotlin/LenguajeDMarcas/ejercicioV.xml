@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResultSet>
+    <totalResultsAvailable>"1827221"</totalResultsAvailable>
+    <totalResultsReturned>2</totalResultsReturned>
+    <firstResultPosition>1</firstResultPosition>
+    <Result>
+            <Title>"potato jpg"</Title>
+            <Summary> "Kentang Si bungsu dari keluarga Solanum tuberosum L ini ternyata memiliki khasiat untuk mengurangi
+                kerutan  jerawat  bintik hitam dan kemerahan pada kulit  Gunakan seminggu sekali sebagai"</Summary>
+            <Url>"http://www.aprenderaprogramar.com/spaw/uploads /images/potato.jpg"</Url>
+            <ClickUrl>"http://www. aprenderaprogramar.com/spaw/uploads/images/potato.jpg"</ClickUrl>
+            <RefererUrl>"http://www.mediaindonesia.com/mediaperempuan/index.php?ar_id=Nzkw"</RefererUrl>
+            <FileSize>22630,</FileSize>
+            <FileFormat>"jpeg"</FileFormat>
+            <Height>"362"</Height>
+            <Width>"532"</Width>
+            <Thumbnail>
+                <Url>"http://thm-a01.yimg.com/nimage/557094559c18f16a"</Url>
+                <Height>"98"</Height>
+                <Width>"145"</Width>
+            </Thumbnail>
+    </Result>
+    <Result>
+            <Title>"potato jpg"</Title>
+            <Summary>"Introduction of puneri aloo This is a traditional potato preparation flavoured with curry
+                leaves and peanuts and can be eaten on fasting day  Preparation time   10 min"</Summary>
+            <Url>"http://www.infovisual.info/01/photo/potato.jpg"</Url>
+            <ClickUrl>"http://www.infovisual.info/01/photo/potato.jpg"</ClickUrl>
+            <RefererUrl>"http://aprenderaprogramar.com.com/puneri-aloo-indian-%20recipe"</RefererUrl>
+            <FileSize>119398</FileSize>:
+            <FileFormat>"jpeg"</FileFormat>
+            <Height>"685"</Height>
+            <Width>"1024"</Width>
+            <Thumbnail>
+                <Url>"http://thm-a01.yimg.com/nimage/7fa23212efe84b64"</Url>
+                <Height>"107"</Height>
+                <Width>"160"</Width>
+            </Thumbnail>
+    </Result>
+</ResultSet>

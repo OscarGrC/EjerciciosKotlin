@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Almacen>
+    <Deposito name="Grande">
+        <Envase name="Grande_Ancho">
+            <Liquido>"Agua"</Liquido>
+            <Liquido>"Leche"</Liquido>
+            <Liquido>"Aceite"</Liquido>
+            <Liquido>"Vinagre"</Liquido>
+            <Liquido>"Alcohol"</Liquido>
+        </Envase>
+        <Envase name="Mediano_Ancho">
+        <Liquido>"Agua"</Liquido>
+        <Liquido>"Leche"</Liquido>
+        <Liquido>"Aceite"</Liquido>
+        <Liquido>"Vinagre"</Liquido>
+        <Liquido>"Alcohol"</Liquido>
+        </Envase>
+    </Deposito>
+    <Deposito name="Mediano">
+        <Envase name="Mediano_Ancho">
+            <Liquido>"Agua"</Liquido>
+            <Liquido>"Leche"</Liquido>
+            <Liquido>"Aceite"</Liquido>
+            <Liquido>"Vinagre"</Liquido>
+            <Liquido>"Alcohol"</Liquido>
+        </Envase>
+        <Envase name="Pequeño">
+            <Liquido>"Gasolina"</Liquido>
+            <Liquido>"Aguarras"</Liquido>
+            <Liquido>"Jabon"</Liquido>
+            <Liquido>"Lejia"</Liquido>
+            <Liquido>"Amoniaco"</Liquido>
+        </Envase>
+    </Deposito>
+    <Deposito name="Verticales">
+        <Envase name="Grande_Alto">
+            <Liquido>"Agua"</Liquido>
+            <Liquido>"Leche"</Liquido>
+            <Liquido>"Aceite"</Liquido>
+            <Liquido>"Vinagre"</Liquido>
+            <Liquido>"Alcohol"</Liquido>
+        </Envase>
+        <Envase name="Mediano_Alto">
+            <Liquido>"Gasolina"</Liquido>
+            <Liquido>"Aguarras"</Liquido>
+            <Liquido>"Jabon"</Liquido>
+            <Liquido>"Lejia"</Liquido>
+            <Liquido>"Amoniaco"</Liquido>
+        </Envase>
+    </Deposito>
+</Almacen>

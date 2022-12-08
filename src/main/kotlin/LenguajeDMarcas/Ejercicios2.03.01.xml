@@ -1,0 +1,225 @@
+1. Escribir un XML Schema para el siguiente documento XML, e incluir los
+        cambios necesarios en el mismo para referenciar al esquema creado. Se
+        sabe que todos los elementos hijos del elemento “nota” son obligatorios y
+        deben aparecer sólo una vez.
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<nota>
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+</nota>
+
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<nota xmlns:xs = "http://www.w3.org/2001/XMLSchema"  xs:noNamespaceSchemaLocation="Ejercicios2.03.01.xsd">
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+</nota>
+
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+<xs:element name="nota">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="para" type="xs:string"/>
+            <xs:element name="de" type="xs:string"/>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="contenido" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
+
+        2. Escribir un XML Schema para el siguiente documento XML, e incluir los
+        cambios necesarios en el mismo para referenciar al esquema creado. Se
+        debe cumplir también lo siguiente:
+        • Los elementos “vehículo”, “nombre” y “modificacion” deben aparecer
+        mínimo una vez, y el máximo no está limitado. El resto de los elementos
+        deben aparecer 1 vez.
+        • Todos los elementos que aparecen en el documento instancia de abajo
+        son obligatorios y deben aparecer siempre en el mismo orden.
+        • Los elementos que contienen información de fecha son todos de tipo
+        cadena.
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<vehiculos xmlns:xs = "http://www.w3.org/2001/XMLSchema"  xs:noNamespaceSchemaLocation="Ejercicios2.03.01.xsd">
+<vehiculo>
+    <nombre>Count Zero</nombre>
+    <modelo>Series I, 80"</modelo>
+    <fabricacion>
+        <inicio>
+            <dia>21</dia>
+            <mes>July</mes>
+            <anyo>1949</anyo>
+        </inicio>
+        <fin>
+            1
+            <dia>9</dia>
+            <mes>August</mes>
+            <anyo>1949</anyo>
+        </fin>
+    </fabricacion>
+    <modificaciones>
+        <modificacion>Change Engine</modificacion>
+        <modificacion>Change pedals</modificacion>
+        <modificacion>Change gearbox</modificacion>
+        <modificacion>Fit Rollcage</modificacion>
+    </modificaciones>
+</vehiculo>
+</vehiculos>
+//XSD
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="vehiculos">
+        // la profe usa ref. esto es para no copiar todo el tipo vehiculo. Para anidar coses
+        mas limpio (foto2)
+        <xs:complexType name="vehiculo">
+            <xs:simpleType name="nombre"/>
+            <xs:simpleType name="modelo"/>
+            <xs:sequence name="fabricacion">
+                <xs:sequence name="inicio">
+                    <xs:sequence name="dia"/>
+                    <xs:sequence name="mes"/>
+                    <xs:sequence name="anyo"/>
+                </xs:sequence>
+                <xs:sequence name ="fin">
+                    <xs:sequence name="dia" />
+                    <xs:sequence name="mes" />
+                    <xs:sequence name="anyo"/>
+            </xs:sequence>
+            </xs:sequence>
+            <xs:complexType name="modificaciones">
+            <xs:simpleType name="modificacion"/>
+            <xs:simpleType name="modificacion"/>
+        </xs:complexType>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+//falta corregir
+
+        5. Convertir el DTD que se muestra a continuación en un XML schema,
+        teniendo en cuenta lo siguiente:
+        • El esquema se guarda en un archivo de nombre “catalogo_libros.xsd”
+        • Los elementos y atributos definidos en el esquema forma un espacio de
+        nombres llamado “http://www.prueba.es/catalogo_libros”
+        • Se debe forzar a que los documentos instancia los elementos y los
+        atributos de este espacio de nombres estén cualificados con un prefijo
+        • Para los tipos complejos se deben utilizar referencias a elementos
+        • Se deben definir dos tipos de datos simples para el mes (“tipoMes”) y el
+        año (“tipoAnyo”), como restricciones del tipo “positiveInteger”. El mes
+        tiene que ser un valor comprendido entre 1 y 12, y el año entre 1900 y
+        2011.
+        • También se define el tipo “tipoNombre”, que será el utilizado para los
+        elementos “titulo”, “autor” y “editor”. Se trata de una restricción del tipo
+        “string” en la que los valores tienen entre 0 y 100 caracteres.
+        • Del mismo modo se define el tipo “tipoISBN”, para el elemento ISBN,
+        como un tipo string que tiene entre 13 y 17 caracteres.
+        <?xml version="1.0" encoding="ISO-8859-1"?>
+<catcatalogoLibro xmlns:xsi =  "http://www.w3.org/2001/XMLSchema" xmlns:cat="http://www.prueba.es/catalogo_libros"
+                  xs:schemaLocation" http://www.prueba.es/catalogo_libros">
+<cat:libro>
+    <cat:titulo></cat:titulo>
+    <cat:titulo></cat:titulo>
+    <cat:titulo></cat:titulo>
+    <cat:titulo></cat:titulo>
+    <cat:editor></cat:editor>
+<!ELEMENT catalogoLibro (libro)*>
+<!ELEMENT libro (titulo, autor+, fecha, ISBN, editor)>
+<!ATTLIST libro
+        categoria (autobiografia | noficcion | ficcion) #REQUIRED
+        enstock (true | false) “false”
+        revisor CDATA “”>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha(mes?, anyo)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT editor (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+
+
+    xml
+
+    version
+    <car:catalogoLibros xmlns:xsi:"http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cat="http://www.prueaba.es//catalog_libros catalogolibros.xsd">
+
+    <cat: libro cat: categoria ="ficcion" cat:enstock="true">
+    cat:titulo
+
+
+
+    //XSD
+
+    targerNamesspace prueba.es/catalogo_libros/"
+    elementeFormDefault= qualified
+    attributePormaDefault = "quealified"
+
+
+
+
+
+
+
+
+
+
+//ej3
+el xml no lo vi, xD
+el xsd definimos el elemento raiz esquema y el prefijo con ref a organizacion y ya aplicamos lo que nos han dicho.
+se inventa el tipo persona y tiene datos y comentario
+element name persona typer tipopersona
+ xml version
+    xsd schema cmlns xsds
+    xsd, element name persona tipo persona/
+    element name comentario type strin
+type name tipo persona
+xsd sequiece
+element name datos tupe info
+element ref comentario min occurs o
+sequence
+atribure na me nacimiento tupe xsd date
+complex type
+comprex type name info
+xsd sequence
+xsd element name nombre type string
+xsd element name apellidos type string
+/xsd sequence
+/xscomplextype
+/xsd.schema
+
+ej4
+
+xml
+<xml version "1.0" encoding= "iso..."
+<matricula xmlns.xsi=" htto www.w3xsi." noNmaesapaceSchemaLocation="matricula.xsd">
+
+
+    //xsd
+
+    definimos
+    elemenet nmatricula t tmatriula
+    complex type tmatricula
+    sequenece
+    elemente personal tpersonal
+    element pago tpago
+    sequence
+    complextype
+    complex type name tpersonal
+    xs all //en el orden que quieran
+    xs element name dni string
+    elemenet name nombre strong
+    elemente name titulacion string
+    element na curso_academico string
+    domicilios tdomicilios
+    xs all
+    /complextype
+    complex Type name tPago
+    xs all
+    complextype
+    complex type tdomicilios
+    //aqui va a todo rabo y ya no leo mas

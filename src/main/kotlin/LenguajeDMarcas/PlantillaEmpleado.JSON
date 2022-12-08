@@ -1,0 +1,13 @@
+{"Empleados": [{"765k2":
+  [{"nombre":"Pepelu","apellidos":"Garcia Soprano",
+  "fechaNacimiento":null,"fechaIncorporacion":"01-10-2020"},
+    {"coche": "Ford k","matricula":"1234ABC","combustible":"Electrico"}
+  ]},{"123A1":
+  [{"codigoEmpleado":"123A1","nombre":"Maria","apellidos": "Lopez Escudero",
+  "fechaNacimiento": "11-02-1987","fechaIncorporacion": "28-06-2022"},
+    {"coche": "Audi A4","matricula":"1236ABC","combustible":"Gasolina"}
+    ]},{"654j3":
+  [{"codigoEmpleado": "654j3","nombre":"Gabriel","apellidos": "Garcia Moreno",
+    "fechaNacimiento": "16-01-2000", "fechaIncorporacion": "28-06-2020"},
+    {"coche": "Kia Picanto","matricula":"9999XZY","combustible":"Diesel"}]}
+]}

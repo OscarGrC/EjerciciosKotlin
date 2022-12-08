@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<FacturaInternet xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+         xsd:targetnamespace="FacturasInternet.xsd" >
+    <factura n_fac="001">
+        <datos_empresa>
+            <nombre>Venta online.</nombre>
+            <dir>Calle El Sol</dir>
+            <poblacion cod_postal="28078">Leganés</poblacion>
+            <provincia>Madrid</provincia>
+            <cif>Z1111111</cif>
+            <telefono/>
+        </datos_empresa>
+        <datos_cliente n_cli="333">
+            <nombre>Luis Gómez Martín</nombre>
+            <dir_env>Av. Avilés 78 3ºA</dir_env>
+            <poblacion cod_postal="28043">Madrid</poblacion>
+            <provincia>Madrid</provincia>
+        </datos_cliente>
+        <datos_factura n_ped="678" iva="21" f_pago="transferencia" moneda="euro">
+            <fecha>2022-11-01</fecha>
+            <linea>
+                <articulo>XII93000F/8</articulo>
+                <desc>Artículos varios de informática</desc>
+                <cant>10</cant>
+                <precio>50.00</precio>
+                <importe>500.00</importe>
+            </linea>
+            <linea>
+                <articulo>XB8QDIP4</articulo>
+                <desc>Ordenador portátil</desc>
+                <cant>1</cant>
+                <precio>1800.00</precio>
+                <importe>1800.00</importe>
+            </linea>
+            <linea>
+                <articulo>XXMDI89</articulo>
+                <desc> Impresora color HP MDI89</desc>
+                <cant>1</cant>
+                <precio>470.50</precio>
+                <importe>470.50</importe>
+            </linea>
+            <base>2770.50</base>
+            <cuota_iva>581.81</cuota_iva>
+            <total>3352.31</total>
+        </datos_factura>
+    </factura>
+</FacturaInternet>

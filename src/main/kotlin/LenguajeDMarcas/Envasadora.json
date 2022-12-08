@@ -1,0 +1,15 @@
+
+{
+  "Almacen":
+    [
+    {"DepositoGrande":[{"EnvasesGrandesAnchos":{"Liquidos":["agua","Leche","Aceite","vinagre","alcohol"]}},
+                     {"EnvasesMedianosAnchos":{"Liquidos":["agua","Leche","Aceite","vinagre","alcohol"]}}
+      ]},
+    {"DepositoMediano":[{"EnvasesMedianosAnchos":{"Liquidos":["agua","Leche","Aceite","vinagre","alcohol"]}},
+                      {"EnvasesPequeños":{"Liquidos":["Gasolina","Amoniaco","Lejia","Jabon","Aguarras"]}}
+      ]},
+    {"DepositoVertical":[{"EnvasesGrandesAltos":{"Liquidos":["agua","Leche","Aceite","vinagre","alcohol"]}},
+                       {"EnvasesMedianosAltos":{"Liquidos":["Gasolina","Amoniaco","Lejia","Jabon","Aguarras"]}}
+      ]}
+    ]
+  }

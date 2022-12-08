@@ -1,0 +1,35 @@
+{"colores": [
+    {"Rojo":"#FF0000","Azul":"#0000FF","Morado":"#9900CC","Negro":"#000000",
+    "Blanco":"#FFFFFF","Naranja":"#FF6600","Verde":"#00FF00","Amarillo":"#FFFF00"}
+]}
+
+//////////////////////////////////////////////////
+{"colores": [
+  {"Rojo":"#FF0000"},
+  {"Azul":"#0000FF"},
+  {"Morado":"#9900CC"},
+  {"Negro":"#000000"},
+  {"Blanco":"#FFFFFF"},
+  {"Naranja":"#FF6600"},
+  {"Verde":"#00FF00"},
+  {"Amarillo":"#FFFF00"}
+]}
+
+
+//////////////
+
+{"colores":[
+  {"color":"Rojo","Codigo":"#FF0000"},
+  {"color":"Azul","Codigo":"#0000FF"},
+  {"color":"Morado","Codigo":"#9900CC"},
+  {"color":"Negro","Codigo":"#000000"},
+  {"color":"Blanco","Codigo":"#FFFFFF"},
+  {"color":"Naranja","Codigo":"#FF6600"},
+  {"color":"Verde","Codigo":"#00FF00"},
+  {"color":"Amarillo","Codigo":"#FFFF00"}
+]}
+
+
+///////////////
+
+{"Persona": ["nombre":"Oscar","apellidos":"Garcia escudero","edad":30,"correoElectronico":"correo@test.com"]}
